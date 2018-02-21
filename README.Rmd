@@ -1,0 +1,29 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# twitterbots
+
+An `R` package for identifying automatically generated Twitter data based on
+text similarity, spatial and temporal features.
+
+[![Build Status](https://travis-ci.org/karpfen/twitterbots.svg)](https://travis-ci.org/karpfen/twitterbots) 
+[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/0.1.0/concept.svg)](http://www.repostatus.org/#concept)
+
+### Installation
+
+```{r, eval=FALSE}
+devtools::install_github("karpfen/twitterbots")
+```
