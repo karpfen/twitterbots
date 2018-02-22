@@ -4,7 +4,10 @@
 \name{twitterbots}
 \alias{twitterbots}
 \alias{twitterbots-package}
-\title{twitterbots.}
+\title{twitterbots}
 \description{
-twitterbots.
+twitterbots
+}
+\author{
+Andreas Petutschnig
 }

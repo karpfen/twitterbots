@@ -1,10 +1,13 @@
 Package: twitterbots
-Title: What the Package Does (one line, title case)
+Title: Detect twitter bots
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Andreas", "Petutschnig", email = "andreas@petutschnig.de", role = c("aut", "cre"))
+Description: Detect bots posting automatically generated social media data by
+    analysing text similarity, temoral, and spatial distribution.
 Depends: R (>= 3.4.3)
-License: What license is it under?
+License: GPL-3
+Imports:
+    tibble
 Encoding: UTF-8
 LazyData: true
 Suggests: testthat
