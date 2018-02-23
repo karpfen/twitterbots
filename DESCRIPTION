@@ -6,9 +6,13 @@ Description: Detect bots posting automatically generated social media data by
     analysing text similarity, temoral, and spatial distribution.
 Depends: R (>= 3.4.3)
 License: GPL-3
+LinkingTo:
+    Rcpp
 Imports:
+    Rcpp (>= 0.12.15),
     tibble
 Encoding: UTF-8
 LazyData: true
 Suggests: testthat
 RoxygenNote: 6.0.1
+SystemRequirements: C++11

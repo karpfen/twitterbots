@@ -11,8 +11,15 @@
 #' @export
 get_text_similarity <- function (user_ids, content, quiet = FALSE)
 {
+    if (!(is.character (user_ids) & is.vector (user_ids)))
+        stop ("user_ids has to be of type character and vector.")
+    if (!(is.character (content) & is.vector (content)))
+        stop ("content has to be of type character and vector.")
     if (length (user_ids) != length (content))
         stop ("user_ids and content have to be of same length.")
+    if (length (user_ids) < 2)
+        stop ("user_ids and content have to contain at least 2 elements.")
+
     unq_user_ids <- unique (user_ids)
     distances <- rep (NA, length (unq_user_ids))
     number_of_tweets <- rep (1, length (unq_user_ids))
@@ -35,7 +42,7 @@ get_text_similarity <- function (user_ids, content, quiet = FALSE)
         if (length (u_text) > 1)
         {
             text_lengths <- mean (sapply (u_text, nchar))
-            text_sims <- mean (adist (u_text))
+            text_sims <- mean (rcpp_adist (u_text))
             distances [i] <- text_sims / text_lengths 
         }
     }
