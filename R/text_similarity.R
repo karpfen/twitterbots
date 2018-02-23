@@ -22,7 +22,7 @@ get_text_similarity <- function (user_ids, content, quiet = FALSE)
 
     unq_user_ids <- unique (user_ids)
     distances <- rep (NA, length (unq_user_ids))
-    number_of_tweets <- rep (1, length (unq_user_ids))
+    number_of_tweets <- as.integer (rep (1, length (unq_user_ids)))
 
     if (!quiet)
     {
