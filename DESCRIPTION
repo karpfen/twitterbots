@@ -9,6 +9,7 @@ License: GPL-3
 LinkingTo:
     Rcpp
 Imports:
+    magrittr,
     Rcpp (>= 0.12.15),
     tibble
 Encoding: UTF-8

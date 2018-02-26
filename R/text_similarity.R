@@ -47,6 +47,6 @@ get_text_similarity <- function (user_ids, content, quiet = FALSE)
         }
     }
     res <- tibble (unq_user_ids, number_of_tweets, distances)
-    names (res) <- c ("user_id", "number_of_tweet", "distance")
+    names (res) <- c ("user_id", "number_of_tweets", "distance")
     res
 }
