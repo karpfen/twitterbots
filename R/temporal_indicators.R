@@ -1,4 +1,4 @@
-#' Calculate how similar each user's text messeges are to each other.
+#' Calculate the frequency with which each user posts.
 #'
 #' @param user_ids A \code{vector} of type \code{character}.
 #' @param times A \code{vector} of type \code{character} containing the time

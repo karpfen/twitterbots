@@ -2,7 +2,7 @@
 % Please edit documentation in R/temporal_indicators.R
 \name{get_tweets_per_day}
 \alias{get_tweets_per_day}
-\title{Calculate how similar each user's text messeges are to each other.}
+\title{Calculate the frequency with which each user posts.}
 \usage{
 get_tweets_per_day(user_ids, times, quiet = FALSE)
 }
@@ -19,5 +19,5 @@ A \code{tibble} containing a user id and the number of tweets per day
 for each user.
 }
 \description{
-Calculate how similar each user's text messeges are to each other.
+Calculate the frequency with which each user posts.
 }
